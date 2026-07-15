@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pages</title>
+<style>
+  :root{ --bg:#f4f5f7; --panel:#ffffff; --border:#dde1e6; --text:#1c2126; --muted:#6b7280; --accent:#2563eb; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+  main{ max-width:640px; margin:0 auto; padding:48px 20px; }
+  h1{ font-size:20px; margin:0 0 6px; }
+  p.sub{ color:var(--muted); font-size:13.5px; margin:0 0 28px; }
+  ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  li a{ display:block; padding:14px 16px; background:var(--panel); border:1px solid var(--border);
+    border-radius:10px; text-decoration:none; color:var(--text); font-size:14px; }
+  li a:hover{ border-color:var(--accent); }
+  li .desc{ display:block; color:var(--muted); font-size:12.5px; margin-top:3px; }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111214; --panel:#1a1b1e; --border:#2a2c30; --text:#e8e9ea; --muted:#8b8f96; --accent:#5b9dff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>pages</h1>
+  <p class="sub">개인용 웹페이지 모음 — 블로그와 무관한 독립 정적 페이지 배포용</p>
+  <ul>
+    <li><a href="lottie-viewer/">로띠(Lottie) 분해 뷰어<span class="desc">Lottie JSON 폴더/파일을 열어 재생·레이어·에셋·원본 속성을 확인하는 도구</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
