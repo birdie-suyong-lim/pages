@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>양평 스윗트리 계곡펜션 여행 (2026.08.16~17)</title>
+<style>
+  :root {
+    --bg: #f6f8f5;
+    --card: #ffffff;
+    --ink: #23312a;
+    --muted: #6b7a72;
+    --accent: #2f7d5c;
+    --accent-soft: #e3f0e9;
+    --line: #e2e8e4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, #2f7d5c, #4aa87e);
+    color: #fff;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 16px;
+  }
+  header h1 { font-size: 1.4rem; margin-bottom: 4px; }
+  header p { opacity: .9; font-size: .95rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; width: 92px; }
+  tr:last-child th, tr:last-child td { border-bottom: none; }
+  .timeline { list-style: none; }
+  .timeline li {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--line);
+    font-size: .95rem;
+  }
+  .timeline li:last-child { border-bottom: none; }
+  .timeline .time {
+    flex: 0 0 88px;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  .day-label {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: .85rem;
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin: 10px 0 6px;
+  }
+  .checklist { list-style: none; }
+  .checklist li { padding: 4px 0; font-size: .95rem; }
+  .checklist label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+  .checklist input[type="checkbox"] {
+    width: 20px; height: 20px;
+    accent-color: var(--accent);
+    flex-shrink: 0;
+  }
+  .checklist input:checked + span { color: var(--muted); text-decoration: line-through; }
+  .cat { font-weight: 700; font-size: .85rem; color: var(--muted); margin: 12px 0 4px; text-transform: uppercase; letter-spacing: .04em; }
+  .cat:first-child { margin-top: 0; }
+  .fill { color: #b06a2c; background: #fdf3e7; border-radius: 6px; padding: 0 6px; }
+  .note { font-size: .85rem; color: var(--muted); margin-top: 10px; }
+  .route {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 6px 0 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .stop {
+    flex: 0 0 auto;
+    min-width: 86px;
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .stop.eat { background: #fdf3e7; }
+  @media (prefers-color-scheme: dark) { .stop.eat { background: #3a2f22; } }
+  .stop-time { font-size: .75rem; font-weight: 700; color: var(--accent); }
+  .stop.eat .stop-time { color: #b06a2c; }
+  @media (prefers-color-scheme: dark) { .stop.eat .stop-time { color: #e0a55f; } }
+  .stop-name { font-weight: 700; font-size: .9rem; margin: 2px 0; }
+  .stop-sub { font-size: .72rem; color: var(--muted); line-height: 1.35; }
+  .arrow { align-self: center; color: var(--muted); flex: 0 0 auto; }
+  a { color: var(--accent); }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 10px 0 30px; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171d1a; --card: #212925; --ink: #e5ece8;
+      --muted: #93a29a; --accent: #6dc79c; --accent-soft: #27352e; --line: #333d38;
+    }
+    .fill { background: #3a2f22; color: #e0a55f; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏞️ 양평 스윗트리 계곡펜션</h1>
+  <p>2026.08.16 (일) ~ 08.17 (월) · 1박 2일 · 포로리와 함께</p>
+</header>
+
+<section>
+  <h2>📋 예약 정보</h2>
+  <table>
+    <tr><th>예약번호</th><td>2608060900D67DYE1</td></tr>
+    <tr><th>숙소</th><td>양평 스윗트리 계곡펜션</td></tr>
+    <tr><th>객실</th><td>스위티 (바로 앞 계곡)</td></tr>
+    <tr><th>입실</th><td>8/16 (일) 15:00 ~</td></tr>
+    <tr><th>퇴실</th><td>8/17 (월) 11:00</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>📍 장소</h2>
+  <table>
+    <tr><th>주소</th><td>경기 양평군 단월면 분지울1길 98</td></tr>
+    <tr><th>연락처</th><td><a href="tel:0507-457-9655">0507-457-9655</a></td></tr>
+    <tr><th>지도</th><td><a href="https://naver.me/xLWAd1Ba">네이버지도 바로가기</a></td></tr>
+    <tr><th>사이트</th><td><a href="http://sweettreeps.kr/">sweettreeps.kr</a></td></tr>
+    <tr><th>이동</th><td>11시 출발 1시간 51분 · <strong>12시 출발 1시간 42분</strong> · 13시 출발 1시간 47분</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>🗓️ 일정</h2>
+  <span class="day-label">Day 1 · 8/16 (일)</span>
+  <ul class="timeline">
+    <li><span class="time">오전</span><span>준비물 최종 점검, 짐 싣기</span></li>
+    <li><span class="time">~ 13:00</span><span>출발 (점심은 이동 중 or 양평 맛집)</span></li>
+    <li><span class="time">15:00</span><span>펜션 입실 ✅</span></li>
+    <li><span class="time">오후</span><span>계곡 물놀이 🏊</span></li>
+    <li><span class="time">저녁</span><span>바비큐 🍖</span></li>
+  </ul>
+  <span class="day-label">Day 2 · 8/17 (월)</span>
+  <ul class="timeline">
+    <li><span class="time">아침</span><span>계곡 산책, 아침 식사</span></li>
+    <li><span class="time">~ 11:00</span><span>짐 정리 &amp; 퇴실 ✅</span></li>
+    <li><span class="time">오후</span><span>양평 근처 카페/맛집 들렀다 귀가</span></li>
+  </ul>
+  <p class="note">세부 일정은 자유롭게 수정하세요. (파일을 편집하면 됩니다)</p>
+</section>
+
+<section>
+  <h2>🍜 근처 맛집 (단월면)</h2>
+  <table>
+    <tr><th><a href="https://naver.me/GZZuN5Ry">메밀가막국수</a></th><td>순메밀 물/비빔 막국수 · 단월면 석산로 12-1 · 10:00~21:00, <strong>월 휴무</strong> — 입실일(일) 점심 후보 ⭐</td></tr>
+    <tr><th><a href="https://naver.me/5r90kRta">월화수</a></th><td>디저트카페 (수제 피자·샌드위치) · 단월면 점골길 41 · 10:00~20:00, <strong>월 휴무</strong> · 테라스, 애견 동반</td></tr>
+    <tr><th><a href="https://naver.me/xbA5XleC">황토마을</a></th><td>묵은지닭볶음탕·토종닭누룽지백숙 (각 60,000) · 감자전 7,000 · 더덕동동주 7,000 · 볶음밥 3,000 — 3년 숙성 묵은지, 직접 재배 유기농 감자 (든든한 한 끼) · 매일 09:00~22:00, 휴무 없음</td></tr>
+    <tr><th><a href="https://naver.me/Gvcy0oUU">노걸대</a></th><td>뼈감자탕 전골(소, 2~3인) 32,000 · 김치짜글이 12,000 (2인분↑) · 뼈해장국·양선지해장국·돈까스 각 12,000 · 황태콩나물해장국 10,000 · 매일 06:00~<strong>14:00</strong>, 휴무 없음 — 오후 2시 마감, 아침·점심 전용</td></tr>
+    <tr><th><a href="https://naver.me/5EUZrz6p">해닭 홍천 본점</a></th><td>해물닭볶이 (36시간 육수 + 낙지·오징어·꽃게) · 매운맛 3단계 · 매일 11:00~21:00</td></tr>
+    <tr><th><a href="https://naver.me/GeURDL8v">뚫어뽕 굴업본점</a></th><td>뚝배기짬뽕·크림짬뽕·로제볶음짬뽕·뚝배기볶음밥 · 홍천 서면 · 태블릿 주문, 주차 편함 · 09:00~16:00, <strong>월 휴무</strong> — 일요일 점심 가능, 저녁·퇴실일 불가</td></tr>
+    <tr><th><a href="https://naver.me/xUw5ft0p">후다닭</a></th><td>춘천닭갈비·막국수 · 홍천 서면 · 매일 10:00~22:00, 휴무 없음</td></tr>
+  </table>
+  <p class="note">방문 전 영업 여부 전화 확인 권장. 휴무 정보는 2026-08 검색 기준.</p>
+</section>
+
+<section>
+  <h2>🚗 동선 예시</h2>
+  <span class="day-label">Day 1 · 8/16 (일)</span>
+  <div class="route">
+    <div class="stop"><div class="stop-time">12:00</div><div class="stop-name">출발</div><div class="stop-sub">1시간 42분</div></div>
+    <div class="arrow">→</div>
+    <div class="stop eat"><div class="stop-time">13:40</div><div class="stop-name">🍜 점심</div><div class="stop-sub">메밀가막국수<br>or 뚫어뽕</div></div>
+    <div class="arrow">→</div>
+    <div class="stop"><div class="stop-time">15:00</div><div class="stop-name">🏞️ 입실</div><div class="stop-sub">짐 풀기</div></div>
+    <div class="arrow">→</div>
+    <div class="stop"><div class="stop-time">오후</div><div class="stop-name">🏊 계곡</div><div class="stop-sub">물놀이</div></div>
+    <div class="arrow">→</div>
+    <div class="stop eat"><div class="stop-time">저녁</div><div class="stop-name">🍖 바비큐</div><div class="stop-sub">펜션</div></div>
+  </div>
+  <span class="day-label">Day 2 · 8/17 (월)</span>
+  <div class="route">
+    <div class="stop"><div class="stop-time">아침</div><div class="stop-name">🌿 산책</div><div class="stop-sub">계곡 한 바퀴</div></div>
+    <div class="arrow">→</div>
+    <div class="stop"><div class="stop-time">11:00</div><div class="stop-name">퇴실</div><div class="stop-sub">짐 정리</div></div>
+    <div class="arrow">→</div>
+    <div class="stop eat"><div class="stop-time">점심</div><div class="stop-name">🍲 노걸대</div><div class="stop-sub">해장국·감자탕<br>(14:00 마감 주의)</div></div>
+    <div class="arrow">→</div>
+    <div class="stop"><div class="stop-time">오후</div><div class="stop-name">🏠 귀가</div><div class="stop-sub">약 1시간 45분</div></div>
+  </div>
+  <p class="note">월요일 점심 대안: 후다닭(닭갈비, ~22:00) · 황토마을(닭볶음탕, ~22:00) — 노걸대는 14:00 마감이니 여유 있게.</p>
+</section>
+
+<section>
+  <h2>🎒 준비물</h2>
+  <div class="cat">물놀이</div>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-k="수영복"><span>수영복 / 래시가드</span></label></li>
+    <li><label><input type="checkbox" data-k="아쿠아슈즈"><span>아쿠아슈즈 (계곡 바닥 미끄러움)</span></label></li>
+    <li><label><input type="checkbox" data-k="타월"><span>타월 넉넉히</span></label></li>
+    <li><label><input type="checkbox" data-k="방수팩"><span>휴대폰 방수팩</span></label></li>
+    <li><label><input type="checkbox" data-k="튜브"><span>튜브 / 물놀이 용품</span></label></li>
+  </ul>
+  <div class="cat">바비큐 · 식사</div>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-k="고기"><span>고기 / 야채 (아이스박스)</span></label></li>
+    <li><label><input type="checkbox" data-k="음료"><span>음료 / 주류</span></label></li>
+    <li><label><input type="checkbox" data-k="숯"><span>숯·그릴 대여 여부 펜션에 확인</span></label></li>
+    <li><label><input type="checkbox" data-k="양념"><span>양념·소금·쌈장, 키친타월</span></label></li>
+    <li><label><input type="checkbox" data-k="아침거리"><span>아침 식사 거리 (라면·햇반 등)</span></label></li>
+  </ul>
+  <div class="cat">기본</div>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-k="세면도구"><span>세면도구 / 스킨케어</span></label></li>
+    <li><label><input type="checkbox" data-k="갈아입을옷"><span>갈아입을 옷 (여벌 넉넉히)</span></label></li>
+    <li><label><input type="checkbox" data-k="충전기"><span>충전기 / 보조배터리</span></label></li>
+    <li><label><input type="checkbox" data-k="모기약"><span>모기 기피제 / 벌레 물림 연고</span></label></li>
+    <li><label><input type="checkbox" data-k="선크림"><span>선크림</span></label></li>
+    <li><label><input type="checkbox" data-k="상비약"><span>상비약 (소화제·밴드·해열제)</span></label></li>
+  </ul>
+  <p class="note">체크 상태는 이 브라우저에 자동 저장됩니다.</p>
+</section>
+
+<section>
+  <h2>📝 메모</h2>
+  <ul class="checklist">
+    <li>· 8월 중순 계곡 수온 낮을 수 있음 — 오후 물놀이 추천</li>
+    <li>· 비 예보 시 계곡 물 불어남 주의 (전날 일기예보 확인)</li>
+    <li>· <span class="fill">자유롭게 추가</span></li>
+  </ul>
+</section>
+
+<footer>2026-08-06 작성 · 개인 위키</footer>
+
+<script>
+  const KEY = "trip-2026-08-yangpyeong";
+  const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+  document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb => {
+    cb.checked = !!saved[cb.dataset.k];
+    cb.addEventListener("change", () => {
+      saved[cb.dataset.k] = cb.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+    });
+  });
+</script>
+
+</body>
+</html>
